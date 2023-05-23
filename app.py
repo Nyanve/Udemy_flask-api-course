@@ -6,8 +6,6 @@ from flask import Flask, jsonify
 from flask_migrate import Migrate
 
 
-
-
 from db import db
 from models import BlocklistModel
 
