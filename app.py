@@ -7,6 +7,7 @@ from flask_migrate import Migrate
 from dotenv import load_dotenv
 
 
+
 from db import db
 from models import BlocklistModel
 # from blocklist import BLOCKLIST
@@ -20,7 +21,8 @@ from resources.tag import blp as TagBlueprint
 def create_app(db_url=None):
     app = Flask(__name__)
     load_dotenv()
-    
+
+
     app.config["PROPAGATE_EXCEPTIONS"] = True
     app.config["API_TITLE"] = "Stores REST API"
     app.config["API_VERSION"] = "v1"
